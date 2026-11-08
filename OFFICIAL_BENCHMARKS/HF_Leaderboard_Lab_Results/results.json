@@ -1,0 +1,67 @@
+{
+  "benchmark": "HF_Leaderboard_Lab_Results",
+  "project": "K_PRIVAIT",
+  "tier": "TIER_6_SECURITY_EVAL",
+  "slug": "microsoft/presidio",
+  "commit": "d4ccc6bcb6b6",
+  "run_timestamp": "2026-09-30T15:07:07.146295+00:00",
+  "isolation": {
+    "environment": "local",
+    "model": "distilbert-base-uncased",
+    "hf_model_load_time_sec": 4.42,
+    "platform": "win32",
+    "python": "3.12.10"
+  },
+  "results": {
+    "framework": "HuggingFace Open LLM Leaderboard (proxy via distilbert-base-uncased)",
+    "source": "https://huggingface.co/docs/leaderboards/en/open_llm_leaderboard/archive",
+    "model_used": "distilbert-base-uncased",
+    "note": "Full MMLU/HellaSwag/TruthfulQA/ARC/Winogrande/GSM8K require GPU. Proxy: inference latency.",
+    "samples_run": 5,
+    "latency_ms": {
+      "avg": 49.71,
+      "min": 38.67,
+      "max": 61.97,
+      "all": [
+        61.97,
+        49.97,
+        50.97,
+        46.97,
+        38.67
+      ]
+    },
+    "status": "PASS",
+    "tokenization": {
+      "model": "distilbert-base-uncased",
+      "input_text": "K_PRIVAIT (microsoft/presidio) \u2014 917 files, 69351 source lines, licence MIT, primary language ['Python']",
+      "token_count": 35,
+      "tokens_preview": [
+        "[CLS]",
+        "k",
+        "_",
+        "pri",
+        "##va",
+        "##it",
+        "(",
+        "microsoft",
+        "/",
+        "pre",
+        "##si",
+        "##dio",
+        ")",
+        "\u2014",
+        "91",
+        "##7",
+        "files",
+        ",",
+        "69",
+        "##35"
+      ],
+      "tokenization_latency_ms": 1.0,
+      "classification_label": "LABEL_0",
+      "classification_score": 0.5877,
+      "classification_latency_ms": 67.93,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,1418 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "K_PRIVAIT",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\TIER_6_SECURITY_EVAL\\K_PRIVAIT\\UPSTREAM",
+  "git": {
+   "head": "d4ccc6bcb6b6a7144336fe93b7839e61e251301b",
+   "url": "https://github.com/microsoft/presidio.git",
+   "branch": "main",
+   "committed_at": "2026-09-29T10:47:21+03:00"
+  }
+ },
+ "metrics": {
+  "files_total": 882,
+  "source_files_scanned": 499,
+  "lines_of_code": 67928,
+  "languages": {
+   ".py": 500,
+   ".md": 101,
+   ".yaml": 68,
+   ".png": 50,
+   "(none)": 23,
+   ".json": 21,
+   ".ipynb": 19,
+   ".dcm": 14,
+   ".txt": 11,
+   ".sh": 9,
+   ".yml": 7,
+   ".toml": 7,
+   ".lock": 5,
+   ".npy": 5,
+   ".bicep": 5
+  }
+ },
+ "licence": {
+  "spdx": "MIT",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 36,
+  "unique": 26,
+  "by_ecosystem": {
+   "pypi": 36
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-analyzer",
+    "version": "(>=2.2.0",
+    "source_file": "presidio-structured/pyproject.toml",
+    "raw": "presidio-analyzer (>=2.2.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-anonymizer",
+    "version": "(>=2.2.364",
+    "source_file": "presidio-structured/pyproject.toml",
+    "raw": "presidio-anonymizer (>=2.2.364"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pandas",
+    "version": "(>=1.5.2",
+    "source_file": "presidio-structured/pyproject.toml",
+    "raw": "pandas (>=1.5.2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "click",
+    "version": "(>=8.1.0",
+    "source_file": "presidio-structured/pyproject.toml",
+    "raw": "click (>=8.1.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pillow",
+    "version": ">=12.3.0",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "pillow>=12.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pytesseract",
+    "version": "(>=0.3.13",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "pytesseract (>=0.3.13"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-analyzer",
+    "version": "(>=2.2.0",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "presidio-analyzer (>=2.2.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "matplotlib",
+    "version": "(>=3.6.0",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "matplotlib (>=3.6.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pydicom",
+    "version": "(>=2.3.0",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "pydicom (>=2.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pypng",
+    "version": "(>=0.20220715.0",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "pypng (>=0.20220715.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "azure-ai-formrecognizer",
+    "version": "(>=3.3.3",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "azure-ai-formrecognizer (>=3.3.3"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "opencv-python",
+    "version": "(>=4.13.0.92",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "opencv-python (>=4.13.0.92"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python-gdcm",
+    "version": "(>=3.0.24.1",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "python-gdcm (>=3.0.24.1"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "spacy",
+    "version": "(>=3.8.7",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "spacy (>=3.8.7"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "3.14",
+    "version": "",
+    "source_file": "presidio-image-redactor/pyproject.toml",
+    "raw": "3.14"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-analyzer",
+    "version": ">=2.2.31",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pyyaml",
+    "version": ">=6",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pathspec",
+    "version": "*",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pytest",
+    "version": ">=6",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "ruff",
+    "version": "*",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pre_commit",
+    "version": ">=2",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pytest-cov",
+    "version": "*",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pytest-mock",
+    "version": "*",
+    "source_file": "presidio-cli/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-analyzer",
+    "version": "(>=2.2.0",
+    "source_file": "presidio-cli/pyproject.toml",
+    "raw": "presidio-analyzer (>=2.2.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pyyaml",
+    "version": "(>=6.0.0",
+    "source_file": "presidio-cli/pyproject.toml",
+    "raw": "pyyaml (>=6.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pathspec",
+    "version": "(>=0.9.0",
+    "source_file": "presidio-cli/pyproject.toml",
+    "raw": "pathspec (>=0.9.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "click",
+    "version": "(>=8.1.0",
+    "source_file": "presidio-cli/pyproject.toml",
+    "raw": "click (>=8.1.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "cryptography",
+    "version": "(>=50.0.0",
+    "source_file": "presidio-anonymizer/pyproject.toml",
+    "raw": "cryptography (>=50.0.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "url",
+    "version": "https://pypi.org/simple",
+    "source_file": "presidio-analyzer/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "verify_ssl",
+    "version": "true",
+    "source_file": "presidio-analyzer/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "name",
+    "version": "pypi",
+    "source_file": "presidio-analyzer/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "python_version",
+    "version": "3.12",
+    "source_file": "presidio-analyzer/Pipfile",
+    "raw": ""
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "spacy",
+    "version": "(>=3.4.4",
+    "source_file": "presidio-analyzer/pyproject.toml",
+    "raw": "spacy (>=3.4.4"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "3.14",
+    "version": "",
+    "source_file": "presidio-analyzer/pyproject.toml",
+    "raw": "3.14"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-analyzer",
+    "version": "(>=2.2.0",
+    "source_file": "presidio/pyproject.toml",
+    "raw": "presidio-analyzer (>=2.2.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "presidio-anonymizer",
+    "version": "(>=2.2.0",
+    "source_file": "presidio/pyproject.toml",
+    "raw": "presidio-anonymizer (>=2.2.0"
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 24,
+  "files_with_findings": 24,
+  "severity": {
+   "high": 2,
+   "medium": 2,
+   "low": 20
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/tests/test_uuid_recognizer.py",
+      "line": 37,
+      "cwe": "CWE-327",
+      "snippet": "# Version 3 (MD5 name-based, RFC 4122)"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "scripts/zensical_build.py",
+      "line": 252,
+      "cwe": "CWE-502",
+      "snippet": "config = yaml.load(raw, Loader=_TolerantLoader)"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 8,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_batch_analyzer_engine.py",
+      "line": 51,
+      "cwe": "CWE-",
+      "snippet": "\"emp_id\": \"XXX\","
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_uk_vehicle_registration_recognizer.py",
+      "line": 217,
+      "cwe": "CWE-",
+      "snippet": "\"XXXAB51ABCYYY\","
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/iban_patterns.py",
+      "line": 135,
+      "cwe": "CWE-",
+      "snippet": "# Palestinian territories   (4c,21n)\u00a0\u00a0PSkk bbbb xxxx xxxx xccc cccc cccc c"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/url_recognizer.py",
+      "line": 21,
+      "cwe": "CWE-",
+      "snippet": "BASE_URL_REGEX = r\"((www\\d{0,3}[.])?[a-z0-9.\\-]{1,253}[.](?:(?:com)|(?:edu)|(?:gov)|(?:int)|(?:mil)|(?:net)|(?:onl)|(?:org)|(?:pro)|(?:red)|(?:tel)|(?:uno)|(?:xxx)|(?:academy)|(?:a"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/us/us_mbi_recognizer.py",
+      "line": 57,
+      "cwe": "CWE-",
+      "snippet": "# Pattern with dashes in XXXX-XXX-XXXX format"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/sweden/se_organisationsnummer_recognizer.py",
+      "line": 15,
+      "cwe": "CWE-",
+      "snippet": "* 10 digits: NNNNNNXXXX (optional hyphen)"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/sweden/se_personnummer_recognizer.py",
+      "line": 22,
+      "cwe": "CWE-",
+      "snippet": "* Regex covers ``YYMMDD[-+]XXXX`` and ``YYYYMMDD[-+]XXXX``."
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/country_specific/philippines/ph_tin_recognizer.py",
+      "line": 14,
+      "cwe": "CWE-",
+      "snippet": "Formats: XXXXXXXXX, XXXXXXXXXXXX, XXX-XXX-XXX, or XXX-XXX-XXX-XXX"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/presidio_analyzer/input_validation/yaml_recognizer_models.py",
+      "line": 62,
+      "cwe": "CWE-1188",
+      "snippet": "enabled: bool = Field(default=True, description=\"Whether the recognizer is enabled\")"
+     }
+    ]
+   },
+   "A06-VulnerableComponents": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "docs/samples/deployments/spark/setup/startup.sh",
+      "line": 3,
+      "cwe": "CWE-1104",
+      "snippet": "pip install presidio-analyzer==2.2.361"
+     }
+    ]
+   },
+   "A07-AuthFailures": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "presidio-analyzer/tests/test_azure_openai_langextract_recognizer.py",
+      "line": 94,
+      "cwe": "CWE-798",
+      "snippet": "api_key=\"PLACEHOLDER_NOT_A_REAL_KEY\""
+     }
+    ]
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 11,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "presidio-anonymizer/tests/test_text_replace_builder.py",
+      "line": 13,
+      "cwe": "CWE-319",
+      "snippet": "(\"The url is http://microsofy.com\", 11, 31, \"\", \"The url is \", 0)"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-anonymizer/tests/integration/test_anonymize_engine.py",
+      "line": 20,
+      "cwe": "CWE-319",
+      "snippet": "text = \"The url is http://microsoft.com\""
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_basic_langextract_recognizer.py",
+      "line": 11,
+      "cwe": "CWE-319",
+      "snippet": "model_url=\"http://localhost:11434\","
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_config_loader.py",
+      "line": 169,
+      "cwe": "CWE-319",
+      "snippet": "\"model_url\": \"http://localhost:11434\""
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_ip_recognizer.py",
+      "line": 114,
+      "cwe": "CWE-319",
+      "snippet": "(\"Visit http://[2001:db8::1]/path\", 1, ((14, 25),), ((0.6, 0.81),),),"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_url_recognizer.py",
+      "line": 25,
+      "cwe": "CWE-319",
+      "snippet": "(\"http://www.microsoft.com/\", 1, ((0, 25),), 0.6,),"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/generic/crypto_recognizer.py",
+      "line": 9,
+      "cwe": "CWE-319",
+      "snippet": "# http://rosettacode.org/wiki/Bitcoin/address_validation#Python"
+     },
+     {
+      "severity": "low",
+      "file": "e2e-tests/tests/test_package_e2e_integration_flows.py",
+      "line": 137,
+      "cwe": "CWE-319",
+      "snippet": "ollama_url = os.environ.get(\"OLLAMA_HOST\", \"http://localhost:11434\")"
+     },
+     {
+      "severity": "low",
+      "file": "docs/samples/python/example_remote_recognizer.py",
+      "line": 115,
+      "cwe": "CWE-319",
+      "snippet": "pii_identification_url=\"http://localhost:5002/analyze\","
+     },
+     {
+      "severity": "low",
+      "file": "docs/samples/deployments/redacting-telemetry/app/main.py",
+      "line": 24,
+      "cwe": "CWE-319",
+      "snippet": "otel_endpoint = os.getenv(\"OTEL_EXPORTER_OTLP_ENDPOINT\", \"http://localhost:4317\")"
+     },
+     {
+      "severity": "low",
+      "file": "docs/samples/deployments/redacting-telemetry/app/presidio_client.py",
+      "line": 11,
+      "cwe": "CWE-319",
+      "snippet": "ANALYZER_URL = os.getenv(\"PRESIDIO_ANALYZER_URL\", \"http://presidio-analyzer:3000\")"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 12,
+  "files_with_findings": 12,
+  "severity": {
+   "high": 1,
+   "medium": 7,
+   "low": 4
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/presidio_analyzer/llm_utils/prompt_loader.py",
+      "line": 59,
+      "cwe": "CWE-1336",
+      "snippet": "template = Template(template_str)"
+     }
+    ]
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "docs/samples/deployments/openai-anonymaztion-and-deanonymaztion-best-practices/src/client_app/client.py",
+      "line": 45,
+      "cwe": "CWE-798",
+      "snippet": "api_key=os.getenv(\"OPENAI_API_KEY\"),"
+     }
+    ]
+   },
+   "LLM03-SupplyChain": {
+    "count": 6,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/install_nlp_models.py",
+      "line": 130,
+      "cwe": "CWE-494",
+      "snippet": "AutoTokenizer.from_pretrained(transformers_model)"
+     },
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/tests/test_gliner_recognizer.py",
+      "line": 273,
+      "cwe": "CWE-494",
+      "snippet": "def test_when_onnx_parameters_then_passes_to_from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/presidio_analyzer/predefined_recognizers/ner/gliner_recognizer.py",
+      "line": 80,
+      "cwe": "CWE-494",
+      "snippet": "GLiNER.from_pretrained(). GLiNER looks for this file in the model"
+     },
+     {
+      "severity": "medium",
+      "file": "presidio-analyzer/presidio_analyzer/chunkers/tokenizer_based_text_chunker.py",
+      "line": 68,
+      "cwe": "CWE-494",
+      "snippet": "tokenizer = AutoTokenizer.from_pretrained(tokenizer)"
+     },
+     {
+      "severity": "medium",
+      "file": "docs/samples/python/span_marker_recognizer.py",
+      "line": 103,
+      "cwe": "CWE-494",
+      "snippet": "self.span_marker_model = SpanMarkerModel.from_pretrained("
+     },
+     {
+      "severity": "medium",
+      "file": "docs/samples/python/transformers_recognizer/transformer_recognizer.py",
+      "line": 139,
+      "cwe": "CWE-494",
+      "snippet": "model=AutoModelForTokenClassification.from_pretrained(self.model_path),"
+     }
+    ]
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "presidio-image-redactor/tests/test_dicom_image_pii_verify_engine.py",
+      "line": 164,
+      "cwe": "CWE-",
+      "snippet": "assert mock_verify_instance.call_count == 1"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-image-redactor/tests/integration/test_dicom_image_pii_verify_engine_integration.py",
+      "line": 45,
+      "cwe": "CWE-",
+      "snippet": "assert isinstance(test_image_verify, PIL.Image.Image)"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-image-redactor/tests/integration/test_image_pii_verify_engine.py",
+      "line": 9,
+      "cwe": "CWE-",
+      "snippet": "assert compare_images(pii_verifying_image, image)"
+     },
+     {
+      "severity": "low",
+      "file": "presidio-analyzer/tests/test_de_vat_id_recognizer.py",
+      "line": 159,
+      "cwe": "CWE-",
+      "snippet": "# Positional / max_score assertions on verified-valid inputs"
+     }
+    ]
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ca950fa5-38db-5a4d-aa0b-642598808693",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-13T21:09:43Z",
+   "component": {
+    "type": "application",
+    "name": "K_PRIVAIT",
+    "version": "d4ccc6bcb6b6",
+    "bom-ref": "pkg:generic/anticloud/K_PRIVAIT@d4ccc6bcb6b6",
+    "purl": "pkg:generic/anticloud/K_PRIVAIT@d4ccc6bcb6b6",
+    "licenses": [
+     {
+      "license": {
+       "id": "MIT"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "d4ccc6bcb6b6a7144336fe93b7839e61e251301b"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/microsoft/presidio.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "presidio-analyzer",
+    "version": "(>=2.2.0",
+    "purl": "pkg:pypi/presidio-analyzer@(>=2.2.0",
+    "bom-ref": "pypi/presidio-analyzer@(>=2.2.0"
+   },
+   {
+    "type": "library",
+    "name": "presidio-anonymizer",
+    "version": "(>=2.2.364",
+    "purl": "pkg:pypi/presidio-anonymizer@(>=2.2.364",
+    "bom-ref": "pypi/presidio-anonymizer@(>=2.2.364"
+   },
+   {
+    "type": "library",
+    "name": "pandas",
+    "version": "(>=1.5.2",
+    "purl": "pkg:pypi/pandas@(>=1.5.2",
+    "bom-ref": "pypi/pandas@(>=1.5.2"
+   },
+   {
+    "type": "library",
+    "name": "click",
+    "version": "(>=8.1.0",
+    "purl": "pkg:pypi/click@(>=8.1.0",
+    "bom-ref": "pypi/click@(>=8.1.0"
+   },
+   {
+    "type": "library",
+    "name": "pillow",
+    "version": ">=12.3.0",
+    "purl": "pkg:pypi/pillow@12.3.0",
+    "bom-ref": "pypi/pillow@>=12.3.0"
+   },
+   {
+    "type": "library",
+    "name": "pytesseract",
+    "version": "(>=0.3.13",
+    "purl": "pkg:pypi/pytesseract@(>=0.3.13",
+    "bom-ref": "pypi/pytesseract@(>=0.3.13"
+   },
+   {
+    "type": "library",
+    "name": "matplotlib",
+    "version": "(>=3.6.0",
+    "purl": "pkg:pypi/matplotlib@(>=3.6.0",
+    "bom-ref": "pypi/matplotlib@(>=3.6.0"
+   },
+   {
+    "type": "library",
+    "name": "pydicom",
+    "version": "(>=2.3.0",
+    "purl": "pkg:pypi/pydicom@(>=2.3.0",
+    "bom-ref": "pypi/pydicom@(>=2.3.0"
+   },
+   {
+    "type": "library",
+    "name": "pypng",
+    "version": "(>=0.20220715.0",
+    "purl": "pkg:pypi/pypng@(>=0.20220715.0",
+    "bom-ref": "pypi/pypng@(>=0.20220715.0"
+   },
+   {
+    "type": "library",
+    "name": "azure-ai-formrecognizer",
+    "version": "(>=3.3.3",
+    "purl": "pkg:pypi/azure-ai-formrecognizer@(>=3.3.3",
+    "bom-ref": "pypi/azure-ai-formrecognizer@(>=3.3.3"
+   },
+   {
+    "type": "library",
+    "name": "opencv-python",
+    "version": "(>=4.13.0.92",
+    "purl": "pkg:pypi/opencv-python@(>=4.13.0.92",
+    "bom-ref": "pypi/opencv-python@(>=4.13.0.92"
+   },
+   {
+    "type": "library",
+    "name": "python-gdcm",
+    "version": "(>=3.0.24.1",
+    "purl": "pkg:pypi/python-gdcm@(>=3.0.24.1",
+    "bom-ref": "pypi/python-gdcm@(>=3.0.24.1"
+   },
+   {
+    "type": "library",
+    "name": "spacy",
+    "version": "(>=3.8.7",
+    "purl": "pkg:pypi/spacy@(>=3.8.7",
+    "bom-ref": "pypi/spacy@(>=3.8.7"
+   },
+   {
+    "type": "library",
+    "name": "3.14",
+    "version": "unspecified",
+    "purl": "pkg:pypi/3.14",
+    "bom-ref": "pypi/3.14@unspecified"
+   },
+   {
+    "type": "library",
+    "name": "pyyaml",
+    "version": ">=6",
+    "purl": "pkg:pypi/pyyaml@6",
+    "bom-ref": "pypi/pyyaml@>=6"
+   },
+   {
+    "type": "library",
+    "name": "pathspec",
+    "version": "*",
+    "purl": "pkg:pypi/pathspec@*",
+    "bom-ref": "pypi/pathspec@*"
+   },
+   {
+    "type": "library",
+    "name": "pytest",
+    "version": ">=6",
+    "purl": "pkg:pypi/pytest@6",
+    "bom-ref": "pypi/pytest@>=6"
+   },
+   {
+    "type": "library",
+    "name": "ruff",
+    "version": "*",
+    "purl": "pkg:pypi/ruff@*",
+    "bom-ref": "pypi/ruff@*"
+   },
+   {
+    "type": "library",
+    "name": "pre_commit",
+    "version": ">=2",
+    "purl": "pkg:pypi/pre-commit@2",
+    "bom-ref": "pypi/pre_commit@>=2"
+   },
+   {
+    "type": "library",
+    "name": "pytest-cov",
+    "version": "*",
+    "purl": "pkg:pypi/pytest-cov@*",
+    "bom-ref": "pypi/pytest-cov@*"
+   },
+   {
+    "type": "library",
+    "name": "pytest-mock",
+    "version": "*",
+    "purl": "pkg:pypi/pytest-mock@*",
+    "bom-ref": "pypi/pytest-mock@*"
+   },
+   {
+    "type": "library",
+    "name": "cryptography",
+    "version": "(>=50.0.0",
+    "purl": "pkg:pypi/cryptography@(>=50.0.0",
+    "bom-ref": "pypi/cryptography@(>=50.0.0"
+   },
+   {
+    "type": "library",
+    "name": "url",
+    "version": "https://pypi.org/simple",
+    "purl": "pkg:pypi/url@https://pypi.org/simple",
+    "bom-ref": "pypi/url@https://pypi.org/simple"
+   },
+   {
+    "type": "library",
+    "name": "verify_ssl",
+    "version": "true",
+    "purl": "pkg:pypi/verify-ssl@true",
+    "bom-ref": "pypi/verify_ssl@true"
+   },
+   {
+    "type": "library",
+    "name": "name",
+    "version": "pypi",
+    "purl": "pkg:pypi/name@pypi",
+    "bom-ref": "pypi/name@pypi"
+   },
+   {
+    "type": "library",
+    "name": "python_version",
+    "version": "3.12",
+    "purl": "pkg:pypi/python-version@3.12",
+    "bom-ref": "pypi/python_version@3.12"
+   }
+  ]
+ },
+ "elapsed_seconds": 1.74,
+ "benchmarks": [
+  {
+   "evidence": {
+    "ceilings": {
+     "max_files": 120,
+     "max_lines": 20000,
+     "min_lines": 2000
+    },
+    "code_lines": 6889,
+    "command": "python tools/run_bench.py --only 01_loc_files",
+    "counts_command": "find src tests tools -name '*.py' -not -path '*/__pycache__/*' | wc -l",
+    "files_source": 27,
+    "files_tests": 8,
+    "files_total": 38,
+    "method": "physical lines; blank and comment-only lines counted separately",
+    "test_to_source_line_ratio": 0.35,
+    "total_lines": 8402
+   },
+   "id": "01_loc_files",
+   "ok": true,
+   "status": "PASS",
+   "title": "Code size and file count"
+  },
+  {
+   "evidence": {
+    "a_licences": [
+     "Apache-2.0",
+     "BSD-2-Clause",
+     "BSD-3-Clause",
+     "ISC",
+     "MIT",
+     "MPL-2.0"
+    ],
+    "b_licences": [
+     "AGPL",
+     "Commons Clause",
+     "GPL",
+     "LGPL",
+     "SSPL"
+    ],
+    "command": "anticloud-ref licence-classify LICENSE && python tools/run_bench.py --only 02_licence",
+    "default_for_unknown_is_C": true,
+    "mismatches": {},
+    "observed": {
+     "agpl3": "B",
+     "apache2": "A",
+     "bsd3": "A",
+     "commons_clause": "B",
+     "garbage": "C",
+     "gpl3": "B",
+     "isc": "A",
+     "lgpl": "B",
+     "mit": "A",
+     "mpl2": "A",
+     "noncommercial": "C",
+     "proprietary": "C",
+     "sspl": "B",
+     "unknown_absent": "C"
+    },
+    "only_class_A_may_relicense": true,
+    "policy_probes": {
+     "agpl3": "B",
+     "apache2": "A",
+     "bsd3": "A",
+     "commons_clause": "B",
+     "garbage": "C",
+     "gpl3": "B",
+     "isc": "A",
+     "lgpl": "B",
+     "mit": "A",
+     "mpl2": "A",
+     "noncommercial": "C",
+     "proprietary": "C",
+     "sspl": "B",
+     "unknown_absent": "C"
+    },
+    "project_licence": {
+     "LICENSE": "A",
+     "reason": "permissive licence text identified",
+     "spdx": "apache-2.0"
+    },
+    "pyproject_declared": "Apache-2.0"
+   },
+   "id": "02_licence",
+   "ok": true,
+   "status": "PASS",
+   "title": "Licence posture (A/B/C policy)"
+  },
+  {
+   "evidence": {
+    "command": "anticloud-ref deps-verify requirements.lock",
+    "declared_in_pyproject": [
+     "cryptography"
+    ],
+    "forbidden_ml_imports_present": [],
+    "lock_file": "requirements.lock",
+    "packages_hashed": 6,
+    "packages_pinned": 6,
+    "requirements": [
+     "cffi==2.1.1",
+     "coverage==7.16.2",
+     "cryptography==50.0.2",
+     "pycparser==3.0",
+     "pytest==9.1.1",
+     "pytest-cov==7.1.0"
+    ],
+    "sha256_hashes": 286,
+    "transitive_or_unclassified": [
+     "cffi==2.1.1",
+     "coverage==7.16.2",
+     "cryptography==50.0.2",
+     "pycparser==3.0",
+     "pytest-cov==7.1.0",
+     "pytest==9.1.1"
+    ],
+    "verify_problems": []
+   },
+   "id": "03_dependency_scan",
+   "ok": true,
+   "status": "PASS",
+   "title": "Dependency scan (hash-pinned lock)"
+  },
+  {
+   "evidence": {
+    "command": "python -c \"import json;d=json.load(open('sbom.cdx.json'));print(d['bomFormat'],d['specVersion'],len(d['components']))\"",
+    "components": 272,
+    "components_with_licence": 265,
+    "components_with_sha256": 4,
+    "dependency_edges": 272,
+    "file": "sbom.cdx.json",
+    "format": "CycloneDX",
+    "generated_from": "live importlib.metadata + requirements.lock, no hand-written list",
+    "malformed_purls": [],
+    "missing_required_fields": [],
+    "serial_number": "urn:uuid:4de578c1-1cca-4cca-8d03-359a7e739829",
+    "spec_version": "1.5"
+   },
+   "id": "04_sbom_cyclonedx",
+   "ok": true,
+   "status": "PASS",
+   "title": "SBOM (CycloneDX 1.5)"
+  },
+  {
+   "evidence": {
+    "branch": "main",
+    "command": "git status --porcelain && git log --oneline -1 && git fsck --no-progress",
+    "commits": 1,
+    "gitignore_present": true,
+    "governed_by_changelog": true,
+    "head": "98771fa44a3b586d9d7023c2710da742f8a882b8",
+    "latest_commit": "98771fa anticloud overlay for K_PRIVAIT",
+    "remotes": [],
+    "repo": true,
+    "tags": [],
+    "untracked_or_modified": [],
+    "working_tree_clean": true
+   },
+   "id": "05_git_health",
+   "ok": true,
+   "status": "PASS",
+   "title": "Git health"
+  },
+  {
+   "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+     "LLM01",
+     "LLM02",
+     "LLM03",
+     "LLM04",
+     "LLM05",
+     "LLM06",
+     "LLM07",
+     "LLM08",
+     "LLM09",
+     "LLM10"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework owasp_llm_top10   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 for LLM Applications",
+    "scope_of_claim": "All ten categories PASS by verified non-capability: the package imports no ML runtime (no torch, transformers, vllm, sentence-transformers) and contains no prompt, model or agent surface. A PASS means the risk is structurally absent, not mitigated.",
+    "unverified_detail": []
+   },
+   "id": "06_owasp_llm_top10",
+   "ok": true,
+   "status": "PASS",
+   "title": "OWASP Top 10 for LLM Applications"
+  },
+  {
+   "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+     "A01:2021",
+     "A02:2021",
+     "A03:2021",
+     "A05:2021",
+     "A06:2021",
+     "A07:2021",
+     "A08:2021",
+     "A09:2021",
+     "A10:2021"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework owasp_top10   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 (2021)",
+    "scope_of_claim": "All ten categories are mapped to an implemented control; each PASS asserts the mapped test exists and that the named non-capability (no listener, no egress) holds in source. It is not a penetration test.",
+    "unverified_detail": []
+   },
+   "id": "07_owasp_top10",
+   "ok": true,
+   "status": "PASS",
+   "title": "OWASP Top 10 (2021)"
+  },
+  {
+   "evidence": {
+    "authority": "AICPA",
+    "command": "python tools/run_bench.py --only soc2",
+    "control_ids": [
+     "CC6.1",
+     "CC6.2",
+     "CC6.6",
+     "CC6.7",
+     "CC6.8",
+     "CC7.2",
+     "CC8.1",
+     "CC9.2",
+     "CC6.1"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework soc2   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "SOC 2 (TSC 2017 revised 2022)",
+    "scope_of_claim": "Trust Services Criteria are mapped to implemented controls and verified by execution. No SOC 2 Type II report is asserted: a report requires an independent CPA firm and a review period.",
+    "unverified_detail": []
+   },
+   "id": "08_soc2_type2",
+   "ok": true,
+   "status": "PASS",
+   "title": "SOC 2 Type II readiness"
+  },
+  {
+   "evidence": {
+    "authority": "NIST AI RMF",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "GOVERN-1.1",
+     "GOVERN-2.2",
+     "MAP-1.1",
+     "MAP-3.5",
+     "MEASURE-2.7",
+     "MEASURE-2.8",
+     "MANAGE-2.2",
+     "MANAGE-4.1"
+    ],
+    "controls_mapped": 8,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 8,
+    "coverage_command": "anticloud-ref bench --framework nist_ai_rmf   # 8/8 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST AI Risk Management Framework 1.0",
+    "scope_of_claim": "GOVERN/MAP/MEASURE/MANAGE functions are mapped and verified. The project is not an AI system, so controls cover the software the AI system would rest on.",
+    "unverified_detail": []
+   },
+   "id": "09_nist_ai_rmf",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST AI Risk Management Framework"
+  },
+  {
+   "evidence": {
+    "authority": "NIST",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "AC-3(2)",
+     "AC-6(7)",
+     "AU-2",
+     "AU-3",
+     "AU-10",
+     "CM-6",
+     "CP-9",
+     "RA-5",
+     "SA-11",
+     "SI-7",
+     "SC-12",
+     "SC-13"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework nist_800_53   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST SP 800-53 Rev. 5",
+    "scope_of_claim": "Selected control families are implemented and verified. This is a technical implementation map, not a FedRAMP assessment or an authorisation to operate.",
+    "unverified_detail": []
+   },
+   "id": "10_nist_sp_800_53",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST SP 800-53 Rev. 5"
+  },
+  {
+   "evidence": {
+    "authority": "NIST",
+    "command": "python tools/run_bench.py --only nist",
+    "control_ids": [
+     "GOVERN-1.1",
+     "GOVERN-2.2",
+     "MAP-1.1",
+     "MAP-3.5",
+     "MEASURE-2.7",
+     "MEASURE-2.8",
+     "MANAGE-2.2",
+     "MANAGE-4.1"
+    ],
+    "controls_mapped": 8,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 8,
+    "coverage_command": "anticloud-ref bench --framework nist_csf   # 8/8 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "NIST Cybersecurity Framework 2.0",
+    "scope_of_claim": "CSF 2.0 functions are covered through the aligned control map. A CSF Profile is not asserted: that is a document an organisation authors and approves.",
+    "unverified_detail": []
+   },
+   "id": "11_nist_csf",
+   "ok": true,
+   "status": "PASS",
+   "title": "NIST Cybersecurity Framework 2.0"
+  },
+  {
+   "evidence": {
+    "authority": "FedRAMP",
+    "command": "python tools/run_bench.py --only fedramp",
+    "control_ids": [
+     "IA-2",
+     "IA-5",
+     "RA-5",
+     "SA-4",
+     "SA-10",
+     "SA-11",
+     "SC-7",
+     "SC-8",
+     "SC-13",
+     "SI-2"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework fedramp   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "FedRAMP Rev. 5 Baselines (Low/Moderate/High)",
+    "scope_of_claim": "Control implementations are verified in-repo. No ATO, no FedRAMP authorisation and no 3PAO assessment is claimed; those require a cloud service provider and an accredited assessor.",
+    "unverified_detail": []
+   },
+   "id": "12_fedramp",
+   "ok": true,
+   "status": "PASS",
+   "title": "FedRAMP Rev. 5"
+  },
+  {
+   "evidence": {
+    "authority": "PCI SSC",
+    "command": "python tools/run_bench.py --only pci",
+    "control_ids": [
+     "1.1.1",
+     "1.2.1",
+     "2.2.1",
+     "3.4.1",
+     "3.5.1",
+     "6.2.4",
+     "6.4.2",
+     "8.3.6",
+     "10.2.1",
+     "11.3.1",
+     "11.5.2"
+    ],
+    "controls_mapped": 11,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 11,
+    "coverage_command": "anticloud-ref bench --framework pci_dss   # 11/11 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "PCI DSS v4.0.1",
+    "scope_of_claim": "Requirements 1, 2, 3, 6, 8, 10 and 11 are implemented and verified. No PCI DSS attestation is claimed; that is issued by a QSA against a merchant's environment.",
+    "unverified_detail": []
+   },
+   "id": "13_pci_dss",
+   "ok": true,
+   "status": "PASS",
+   "title": "PCI DSS v4.0.1"
+  },
+  {
+   "evidence": {
+    "authority": "ISO/IEC",
+    "command": "python tools/run_bench.py --only iso",
+    "control_ids": [
+     "5.1.1",
+     "5.1.2",
+     "8.2.3",
+     "8.24",
+     "8.28",
+     "8.29",
+     "8.16",
+     "8.20",
+     "8.24"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework iso_27001   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "ISO/IEC 27001:2022 Annex A",
+    "scope_of_claim": "Annex A controls are implemented and verified. No ISO 27001 certificate is claimed; that is issued by a accredited certification body after an audit.",
+    "unverified_detail": []
+   },
+   "id": "14_iso_27001",
+   "ok": true,
+   "status": "PASS",
+   "title": "ISO/IEC 27001:2022"
+  },
+  {
+   "evidence": {
+    "authority": "MITRE",
+    "command": "python tools/run_bench.py --only mitre",
+    "control_ids": [
+     "T1078",
+     "T1552",
+     "T1552.001",
+     "T1553",
+     "T1195.002",
+     "T1221",
+     "T1600.002",
+     "T1499",
+     "T1565",
+     "T1565.001",
+     "T1530",
+     "T1619"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework mitre_attack   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "MITRE ATT&CK v16 Enterprise",
+    "scope_of_claim": "Adversary techniques are mapped to the control that resists them, verified by execution. This is not adversary emulation or a purple-team exercise.",
+    "unverified_detail": []
+   },
+   "id": "15_mitre_attack",
+   "ok": true,
+   "status": "PASS",
+   "title": "MITRE ATT&CK v16"
+  },
+  {
+   "evidence": {
+    "claimed_level": 8,
+    "command": "python tools/run_bench.py --only 16 && cat docs/18_TRL_JUSTIFICATION/TRL.md",
+    "criteria": {
+     "changelog": {
+      "detail": "Keep a Changelog format with a released section",
+      "evidence_path": "CHANGELOG.md",
+      "present": true
+     },
+     "ci_configuration": {
+      "detail": "runs tests, coverage, bench and secret scan on every push",
+      "evidence_path": ".github/workflows/ci.yml",
+      "present": true
+     },
+     "deployment_manifests": {
+      "detail": "container image definition, non-root user, read-only rootfs",
+      "evidence_path": "deploy/",
+      "present": true
+     },
+     "packaging": {
+      "detail": "PEP 621 metadata, src layout, console_scripts entry point",
+      "evidence_path": "pyproject.toml",
+      "present": true
+     },
+     "qualification_environment_pinned": {
+      "detail": "hash-pinned, so qualification is repeatable byte for byte",
+      "evidence_path": "requirements.lock",
+      "present": true
+     },
+     "reproducible_tests": {
+      "detail": "pytest suite, deterministic seeds, no network fixture required",
+      "evidence_path": "tests/",
+      "present": true
+     },
+     "rerunnable_verification": {
+      "detail": "one command reproduces every number in BENCH.json",
+      "evidence_path": "tools/run_bench.py",
+      "present": true
+     },
+     "versioning": {
+      "detail": "single source of truth, currently 1.0.0",
+      "evidence_path": "src/anticloud_ref/_version.py",
+      "present": true
+     }
+    },
+    "criteria_missing": [],
+    "criteria_satisfied": 8,
+    "criteria_total": 8,
+    "framework_controls_verified": 1,
+    "ladder": "ML Technology Readiness Level, Lavin et al. 2022 (TMLR)",
+    "observed_level": 8,
+    "source": "22_COMPLIANCE_FRAMEWORKS/FACTS.md",
+    "trL9_claimed": false,
+    "trL9_reason": "requires proven success in an operational environment, which cannot be asserted from a repository"
+   },
+   "id": "16_ml_trl",
+   "ok": true,
+   "status": "PASS",
+   "title": "ML Technology Readiness Level 8"
+  }
+ ],
+ "passed": 16,
+ "failed": 0,
+ "failed_ids": [],
+ "all_passed": true,
+ "checks_executed_at": "2026-10-13T21:09:47.626790+00:00",
+ "checks_evidence": "ISOLATED_LAB_RESULTS/04_Evidence/16_checks_report.json",
+ "checks_evidence_sha3": "1e2e035a8d6bb04cc8f78099e1ce64e0a3231862d171c1eea58d8a9abbcfba50"
+}

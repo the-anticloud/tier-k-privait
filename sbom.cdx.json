@@ -1,0 +1,221 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ca950fa5-38db-5a4d-aa0b-642598808693",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-13T21:09:43Z",
+    "component": {
+      "type": "application",
+      "name": "K_PRIVAIT",
+      "version": "d4ccc6bcb6b6",
+      "bom-ref": "pkg:generic/anticloud/K_PRIVAIT@d4ccc6bcb6b6",
+      "purl": "pkg:generic/anticloud/K_PRIVAIT@d4ccc6bcb6b6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "d4ccc6bcb6b6a7144336fe93b7839e61e251301b"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/microsoft/presidio.git"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "presidio-analyzer",
+      "version": "(>=2.2.0",
+      "purl": "pkg:pypi/presidio-analyzer@(>=2.2.0",
+      "bom-ref": "pypi/presidio-analyzer@(>=2.2.0"
+    },
+    {
+      "type": "library",
+      "name": "presidio-anonymizer",
+      "version": "(>=2.2.364",
+      "purl": "pkg:pypi/presidio-anonymizer@(>=2.2.364",
+      "bom-ref": "pypi/presidio-anonymizer@(>=2.2.364"
+    },
+    {
+      "type": "library",
+      "name": "pandas",
+      "version": "(>=1.5.2",
+      "purl": "pkg:pypi/pandas@(>=1.5.2",
+      "bom-ref": "pypi/pandas@(>=1.5.2"
+    },
+    {
+      "type": "library",
+      "name": "click",
+      "version": "(>=8.1.0",
+      "purl": "pkg:pypi/click@(>=8.1.0",
+      "bom-ref": "pypi/click@(>=8.1.0"
+    },
+    {
+      "type": "library",
+      "name": "pillow",
+      "version": ">=12.3.0",
+      "purl": "pkg:pypi/pillow@12.3.0",
+      "bom-ref": "pypi/pillow@>=12.3.0"
+    },
+    {
+      "type": "library",
+      "name": "pytesseract",
+      "version": "(>=0.3.13",
+      "purl": "pkg:pypi/pytesseract@(>=0.3.13",
+      "bom-ref": "pypi/pytesseract@(>=0.3.13"
+    },
+    {
+      "type": "library",
+      "name": "matplotlib",
+      "version": "(>=3.6.0",
+      "purl": "pkg:pypi/matplotlib@(>=3.6.0",
+      "bom-ref": "pypi/matplotlib@(>=3.6.0"
+    },
+    {
+      "type": "library",
+      "name": "pydicom",
+      "version": "(>=2.3.0",
+      "purl": "pkg:pypi/pydicom@(>=2.3.0",
+      "bom-ref": "pypi/pydicom@(>=2.3.0"
+    },
+    {
+      "type": "library",
+      "name": "pypng",
+      "version": "(>=0.20220715.0",
+      "purl": "pkg:pypi/pypng@(>=0.20220715.0",
+      "bom-ref": "pypi/pypng@(>=0.20220715.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-ai-formrecognizer",
+      "version": "(>=3.3.3",
+      "purl": "pkg:pypi/azure-ai-formrecognizer@(>=3.3.3",
+      "bom-ref": "pypi/azure-ai-formrecognizer@(>=3.3.3"
+    },
+    {
+      "type": "library",
+      "name": "opencv-python",
+      "version": "(>=4.13.0.92",
+      "purl": "pkg:pypi/opencv-python@(>=4.13.0.92",
+      "bom-ref": "pypi/opencv-python@(>=4.13.0.92"
+    },
+    {
+      "type": "library",
+      "name": "python-gdcm",
+      "version": "(>=3.0.24.1",
+      "purl": "pkg:pypi/python-gdcm@(>=3.0.24.1",
+      "bom-ref": "pypi/python-gdcm@(>=3.0.24.1"
+    },
+    {
+      "type": "library",
+      "name": "spacy",
+      "version": "(>=3.8.7",
+      "purl": "pkg:pypi/spacy@(>=3.8.7",
+      "bom-ref": "pypi/spacy@(>=3.8.7"
+    },
+    {
+      "type": "library",
+      "name": "3.14",
+      "version": "unspecified",
+      "purl": "pkg:pypi/3.14",
+      "bom-ref": "pypi/3.14@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "pyyaml",
+      "version": ">=6",
+      "purl": "pkg:pypi/pyyaml@6",
+      "bom-ref": "pypi/pyyaml@>=6"
+    },
+    {
+      "type": "library",
+      "name": "pathspec",
+      "version": "*",
+      "purl": "pkg:pypi/pathspec@*",
+      "bom-ref": "pypi/pathspec@*"
+    },
+    {
+      "type": "library",
+      "name": "pytest",
+      "version": ">=6",
+      "purl": "pkg:pypi/pytest@6",
+      "bom-ref": "pypi/pytest@>=6"
+    },
+    {
+      "type": "library",
+      "name": "ruff",
+      "version": "*",
+      "purl": "pkg:pypi/ruff@*",
+      "bom-ref": "pypi/ruff@*"
+    },
+    {
+      "type": "library",
+      "name": "pre_commit",
+      "version": ">=2",
+      "purl": "pkg:pypi/pre-commit@2",
+      "bom-ref": "pypi/pre_commit@>=2"
+    },
+    {
+      "type": "library",
+      "name": "pytest-cov",
+      "version": "*",
+      "purl": "pkg:pypi/pytest-cov@*",
+      "bom-ref": "pypi/pytest-cov@*"
+    },
+    {
+      "type": "library",
+      "name": "pytest-mock",
+      "version": "*",
+      "purl": "pkg:pypi/pytest-mock@*",
+      "bom-ref": "pypi/pytest-mock@*"
+    },
+    {
+      "type": "library",
+      "name": "cryptography",
+      "version": "(>=50.0.0",
+      "purl": "pkg:pypi/cryptography@(>=50.0.0",
+      "bom-ref": "pypi/cryptography@(>=50.0.0"
+    },
+    {
+      "type": "library",
+      "name": "url",
+      "version": "https://pypi.org/simple",
+      "purl": "pkg:pypi/url@https://pypi.org/simple",
+      "bom-ref": "pypi/url@https://pypi.org/simple"
+    },
+    {
+      "type": "library",
+      "name": "verify_ssl",
+      "version": "true",
+      "purl": "pkg:pypi/verify-ssl@true",
+      "bom-ref": "pypi/verify_ssl@true"
+    },
+    {
+      "type": "library",
+      "name": "name",
+      "version": "pypi",
+      "purl": "pkg:pypi/name@pypi",
+      "bom-ref": "pypi/name@pypi"
+    },
+    {
+      "type": "library",
+      "name": "python_version",
+      "version": "3.12",
+      "purl": "pkg:pypi/python-version@3.12",
+      "bom-ref": "pypi/python_version@3.12"
+    }
+  ]
+}
